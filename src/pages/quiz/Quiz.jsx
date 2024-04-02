@@ -1,8 +1,12 @@
+import { useParams } from "react-router-dom"
 import "./Quiz.css"
 
 const Quiz = () => {
+  const {difficulty , amount} = useParams()
   return (
-    <div className='quiz'>Quiz</div>
+    <div className='quiz'>
+      {difficulty} - {amount}
+    </div>
   )
 }
 
